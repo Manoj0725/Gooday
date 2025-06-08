@@ -1,0 +1,61 @@
+body {
+  background-color: #ffe4ec;
+ /* Remove 3D animation from all text elements */
+h1,
+.question-block,
+button,
+#result,
+textarea,
+form {
+  filter: none !important;
+  transform: none !important;
+  animation: none !important;
+}
+
+@keyframes boomerang {
+  0% {
+    background-position: 0 0, 40px 40px;
+  }
+  50% {
+    background-position: 80px 40px, 120px 80px;
+  }
+  100% {
+    background-position: 0 0, 40px 40px;
+  }
+}
+
+@keyframes hearts3d {
+  0% {
+    filter: drop-shadow(0 0 0px #ce719f) drop-shadow(0 0 0px #fff);
+  }
+  100% {
+    filter: drop-shadow(0 8px 12px #ff69b4) drop-shadow(0 4px 8px #fff);
+    transform: perspective(400px) rotateY(10deg) scale(1.05);
+  }
+}
+
+h1 {
+  color: rgb(224, 224, 234);
+  font-size: 40px;
+  background-color: rgb(133, 42, 85);
+  text-align: center;
+  padding: 2px;
+  margin: 2%;
+}
+
+/* Add to your style.css/style.css */
+.instagram-link {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #e1306c;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+}
+.instagram-link:hover {
+  background: #c13584;
+}
